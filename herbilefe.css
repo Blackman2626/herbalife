@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    cursor: default;
+    user-select: none;
+}
+
+
+header {
+    background-color: #67B209;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px 5px 200px;
+    box-shadow: 0 0 2rem black;
+    z-index: 100;
+    border: none;
+
+}
+
+.disp{
+    font-size: 20px;
+}
+
+
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    transition: .9s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+
+
+}
+
+
+nav a {
+    display: inline-block;
+    margin: 0 15px;
+    color: rgb(33, 37, 41);
+    letter-spacing: 2px;
+    transition: 0.9s ease;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 1.3;
+   
+
+}
+
+nav a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: rgb(33, 37, 41);
+    transition: all .6s ease-in-out;
+
+}
+
+
+
+nav .list a:hover:after,
+nav .list a:focus:after {
+    width: 100%;
+    opacity: 0.8;
+
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.516);
+    gap: 40px;
+}
+
+
+
+
+
+
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: 50px;
+
+}
+
+.main-content {
+    line-height: 2;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.main-content h2 {
+    font-size: 30px;
+}
+
+.main-content p {
+    font-size: 18px;
+}
+
+.main-content .bosluk {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+.main-img {
+    width: 100%;
+    height: auto;
+    flex: 1;
+
+
+}
+
+section {
+    margin-bottom: 200px;
+}
+
+.main-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 0 1rem #67B209;
+    object-fit: cover;
+}
+
+.hakkımda {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    gap: 15px;
+    background-color: #66b20971;
+    box-shadow: 0 0 1rem white;
+    z-index: 5;
+    border-radius: 20px;
+
+
+}
+
+.hakkımda-content {
+    line-height: 2;
+    width:100%;
+    padding: 0 20px;
+    
+
+
+}
+
+.hakkımda-content h2 {
+    font-size: 30px;
+}
+
+.hakkımda-content p {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+.iletisim{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    gap: 15px;
+  
+}
+
+.iletisim-content {
+    line-height: 2;
+    padding: 0 20px;
+    width: 100%;
+
+}
+
+.iletisim-content h2 {
+    font-size: 30px;
+}   
+
+.iletisim-content p {
+    font-size: 18px;
+}
+
+.iletisim-img {
+    width: 100%;
+    height: auto;
+
+}
+
+.iletisim-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 0 1rem #67B209;
+
+}
+
+.icon{
+    display: none;
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #67B209;
+}
+
+
+.footer .social_media i{
+    color: white;
+    font-size: 23px;
+    margin: 0 10px;
+
+}
+
+.footer .teaser{
+    letter-spacing: 1px;
+    color: white;
+
+}
+
+
+
+iframe{
+    border-radius: 20px;
+    width: 100%;
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+    .header {
+        width: 100%;
+        height: 200px;
+        border-radius: 0;
+
+
+    }
+
+    .header .logo {
+        font-size: 35px;
+        line-height: 2.5;
+
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        gap: 5px;
+
+    }
+
+
+    .main {
+        margin: 0;
+        padding: 0 ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .main-content {
+        margin: 30px 0;
+        padding: 0;
+
+    }
+
+    .main-content h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .main-content p,
+    .bosluk {
+        font-weight: 300;
+    }
+
+    .hakkımda {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        padding: 0 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:white;
+    }
+
+    
+    .kaybol{
+        display: none;
+    }
+
+    .icon{
+        display: block;
+    }
+ 
+
+    .iletisim{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color:white ;   
+    }
+
+    .footer{
+        width: 100%;
+        height: 100px;
+  
+    }
+
+    .footer .social_media i{
+        color: white;
+        font-size: 15px;
+        margin: 0 5px;
+
+    
+    }
+    
+    .footer .teaser{
+        letter-spacing: 1px;
+        color: white;
+        font-size: 12px;
+    
+    }
+    
+  
+
+ 
+
+
+}
