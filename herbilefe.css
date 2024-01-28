@@ -91,7 +91,8 @@ nav .list a:focus:after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.516);
+    background-color:aliceblue;
+    background-image: linear-gradient(to right top, #cbd7e9, #67B209, #fff, #67B209, #a8eb12);
     gap: 40px;
 }
 
@@ -235,6 +236,14 @@ section {
 
 .icon{
     display: none;
+
+}
+
+nav .list .icon:hover:after,
+nav .list .icon:focus:after {
+    width: 0;
+    opacity: 0.8;
+
 }
 
 .footer{
@@ -244,6 +253,8 @@ section {
     justify-content: space-around;
     align-items: center;
     background-color: #67B209;
+    border-radius: 20px;
+    box-shadow: 0 0 1rem black;
 }
 
 
@@ -251,6 +262,12 @@ section {
     color: white;
     font-size: 23px;
     margin: 0 10px;
+    transition: .5s ease-in-out;
+
+}
+
+.footer .social_media i:hover{
+    transform: translateY(-10px);
 
 }
 
@@ -258,7 +275,13 @@ section {
     letter-spacing: 1px;
     color: white;
 
+
 }
+
+
+
+
+
 
 
 
@@ -380,7 +403,7 @@ iframe{
     }
     
   
-
+  
  
 
 
